@@ -36,4 +36,4 @@ externalPort = 80
 [deployment]
 deploymentTarget = "autoscale"
 run = ["bash", "-c", "cd email-generator && npm run start"]
-build = ["npm", "--prefix", "email-generator", "install"]
+build = ["bash", "-c", "cd email-generator && npm install && npm run build"]
